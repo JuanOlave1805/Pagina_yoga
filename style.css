@@ -11,6 +11,8 @@
     ---button: #f3ccc4;
     ---white: white;
     ---gray:#b8b0b0;
+    ---gray_suave: #9ca3af;
+    ---blue:#444c5c;
 }
 
 .red{
@@ -20,8 +22,13 @@
     background-color: var(---white);
 }
 .gray_bg{
-    z-index: -10;
     background-color: var(---gray);
+}
+.blue_bg{
+    background-color: var(---blue);
+}
+.rosa_bg{
+    background-color: var(---button);
 }
 /* Flex */
 .flex{
@@ -62,25 +69,16 @@
 .width-40{
     width: 40%;
 }
+.width-30{
+    width: 30%;
+}
 
 /* Z-index */
 .z-index{
-    z-index: 10;
-}
-.z-index-0{
-    z-index: 0;
+    z-index: 1;
 }
 .z-index--1{
     z-index: -1;
-}
-.z-index-1{
-    z-index: 1;
-}
-.z-index_1{
-    z-index: -10;
-}
-.z-index-2{
-    z-index: 20;
 }
 
 /* Imagenes */
@@ -88,8 +86,11 @@
     background-size: cover;
     width: clamp(30px, 15vw, 110px);
     height: auto;
-    font-size: clamp(14px, 5vw, 21px);
     font-family: "Open Sans", sans-serif;
+}
+.image{
+    width: clamp(20px, 25vw, 110px);
+    height: auto;
 }
 .image1{
     z-index: -2;
@@ -99,6 +100,9 @@
     width: clamp(50px, 40vw, 550px);
 }
 .image3{
+    width: clamp(50px, 50vw, 800px);
+}
+.image4{
     width: clamp(50px, 50vw, 800px);
 }
 
@@ -111,54 +115,135 @@
 }
 
 .img1{
-    z-index: -1;
     width: 15vw;
-    right: 0;
-    top: 10vh;
+}
+.img1-edit{
+    left: 40.8vw;
+    bottom: 45vh;
 }
 .img2{
-    z-index: -1;
     width: 15vw;
-    right: 70vw;
-    top: 70vh;
+}
+.img2-edit{
+    top: 12vh;
+    right: 37vw;
 }
 .img3{
-    z-index: -1;
     width: 12vw;
-    right: 0vw;
-    bottom: 0;
+}
+.img3-edit{
+    left: 37vw;
+    top: 30vh;
 }
 .img4{
-    z-index: -1;
     width: 13vw;
-    bottom: 40vh;
-    left: 14vw;
+}
+.img4-edit{
+    bottom: 28vh;
+    right: 45vw;
 }
 .img5{
-    z-index: -1;
     width: 15vw;
-    top: 10vh;
-    left: 0;
+}
+.img5-edit{
+    bottom: 42vh;
+    right: 56vw;
+}
+.img6{
+    width: 8vw;
+}
+.img6-edit{
+    top: 1vh;
+    right: 55vw;
+}
+.img7{
+    width: 8vw;
+}
+.img7-edit{
+    bottom: 70vh;
+    right: 55vw;
 }
 .img8{
-    width: clamp(15px, 10vw, 130px);
-    top: 340vh;
-    left: 0vw;
-    z-index: -1;
-}
-.img9{
     width: clamp(20px, 23vw, 400px);
     height: auto;
-    top: 368vh;
-    right: clamp(100px, 25vw,800px);
+}
+.img8-edit{
+    bottom: 55vh;
+    left: 45vw;
+}
+.img9{
+    width: 14vw;
+}
+.img9-edit{
+    top: 44vh;
+    right: 5vw;
 }
 .img10{
-    width: clamp(20px, 13vw, 300px);
-    top: 540vh;
-    left: 0vw;
-    z-index: -1;
+    width: 20vw;
 }
-
+.img10-edit{
+    top: 26vh;
+    right: 18vw;
+}
+.img11{
+    width: 10vw;
+}
+.img11-edit{
+    top: 40vh;
+    right: 62vw;
+}
+.img12{
+    width: 60vw;
+}
+.img12-edit{
+    bottom: 35vh;
+    right: 22vw;
+}
+.img13{
+    width: 12vw;
+}
+.img13-edit{
+    bottom: 27.6vh;
+    left: 37.5vw;
+}
+.img14{
+    width: 10vw;
+}
+.img14-edit{
+    top: 0;
+    right: -5vw;
+}
+.img15{
+    width: 20vw;
+}
+.img15-edit{
+    top: 60vh;
+    right: 5vw;
+}
+.img16{
+    width: 20vw;
+}
+.img16-edit{
+    top: 0vh;
+    right: 82vw;
+}
+.img17{
+    width: 15vw;
+}
+.img17-edit{
+    top: 77.6vh;
+    right: 85vw;
+}
+/* Icon */
+.icon{
+    width: 2vw;
+    color: var(---Text-1);
+}
+.icon2{
+    width: 1vw;
+    margin-top: 5px;
+    color: var(---Text-1);
+}
 /* tougle */
 .toggle-menu, #toogle-menu{
     display: none;
@@ -177,10 +262,19 @@
 .list_None{
     list-style: none;
 }
-/* Padding */
-.padding_top-10{
-    padding-top: 10vh;
+/* Input */
+.input1{
+    padding-left: 20px;
+    width: 100%;
+    background-color: var(---gray_suave);
+    border: none;
 }
+.placeholder {
+    position: absolute; /* Establece una posición absoluta */
+    top: 5px; /* Ajusta la posición vertical */
+    left: 5px; /* Ajusta la posición horizontal */
+}
+
 /* Gap */
 .gap{
     gap: 50px;
@@ -189,21 +283,43 @@
 .absolute{
     position: absolute;
 }
+.relative{
+    position: relative;
+} 
 .fixed{
     position: fixed;
+    z-index: 10;
 }
 /* Text */
 .text{
-    font-size: clamp(12px, 4vw, 28px);
+    font-size: clamp(10px, 2vw, 28px);
     color: var(---Text-1);
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
 }
 .text2{
-    font-size: clamp(12px, 4vw, 20px);
+    font-size: clamp(10px, 3vw, 20px);
     color: var(---Text-1);
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
+}
+.text-white{
+    font-size: clamp(10px, 3vw, 28px);
+    color: var(---white);
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+.text-0{
+    font-weight: 0;
+}
+.text2-white{
+    font-size: clamp(10px, 2.5vw, 20px);
+    color: var(---white);
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+.text2-0{
+    font-weight: 0;
 }
 .text_nav{
     color: var(---Text-1);
@@ -218,6 +334,7 @@
     font-weight: 700;
     color: var(---Text-1);
     font-family: "Open Sans", sans-serif;
+    z-index: 1;
 }
 .text_title2{
     font-size: clamp(30px, 5vw, 50px);
@@ -238,6 +355,9 @@
 /* Height */
 .height-10{
     height: 10vh;
+}
+.height-30{
+    height: 30vh;
 }
 .height-80{
     height: 80%;
@@ -271,57 +391,28 @@
 .padding_botton{
     padding-bottom: 20px;
 }
+.padding_botton-10{
+    padding-bottom: 10vh;
+}
+.padding_top-10{
+    padding-top: 50px;
+}
+.padding_top-5{
+    padding-top: 5vh;
+}
+/* Margin */
+.margin-20{
+    margin: 5vh 0vw;
+}
 /* Grid */
 .grid{
     flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
-  }
-@media (max-width: 850px){
-    .grid{
-        flex-direction: column;
-        align-items: center;
-    }
-    .card{
-        width: 60%;
-        height: auto;
-    }
-    .width-40{
-        width: 90%;
-        display: flex;
-        justify-content: center;
-    }
-    .text_title{
-        margin-top: 10px;
-    }
-    .text{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    /* Flex */
-    .flex{
-        flex-direction: column;
-    }
-    .article{
-        height: clamp(400px, 100vh,900px)
-    }
-    .article3{
-        height: auto;
-    }
-    .height-80{
-        height: auto;
-    }
-    .article-50{
-        height: auto;
-    }
-    /* img */
-    .img9{
-        display: none;
-    }
-    .gap{
-        gap: 0px;
-    }
+}
+@media (max-width: 890px){
+   
     /* toggle */
     
   .toggle-menu{

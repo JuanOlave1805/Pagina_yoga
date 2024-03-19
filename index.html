@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 <body>
     <header class=" flex flex-center white_bg width white_bg height-10 fixed">
@@ -40,16 +41,16 @@
         </ul>
       </nav>
       </header>
-      <main>
+      <main class="width">
         <article class="article flex flex-space_evenly flex-aling_center gap padding_top-10" id="home">
           <section class="width-40">
             <img src="Componentes/Articulo 1/image.png" alt="image" class="image1">
-            <img src="Componentes/Articulo 1/img1.png" alt="image" class="img1 absolute">
-            <img src="Componentes/Articulo 1/img2.png" alt="image" class="img2 absolute">
-            <img src="Componentes/Articulo 1/img3.png" alt="image" class="img3 absolute">
-            <img src="Componentes/Articulo 1/img4.png" alt="image" class="img4 absolute">
-            <img src="Componentes/Articulo 1/img5.png" alt="image" class="img5 absolute ">
           </section>
+          <div class="relative img1-edit"><img src="Componentes/Articulo 1/img1.png" alt="image" class="img1 absolute"></div>
+          <div class="relative img2-edit"><img src="Componentes/Articulo 1/img2.png" alt="image" class="img2 absolute"></div>
+          <div class="relative img3-edit"><img src="Componentes/Articulo 1/img3.png" alt="image" class="img3 absolute"></div>
+          <div class="relative img4-edit"><img src="Componentes/Articulo 1/img4.png" alt="image" class="img4 absolute"></div>
+          <div class="relative img5-edit"><img src="Componentes/Articulo 1/img5.png" alt="image" class="img5 absolute "></div>
           <section class="flex flex-column width-40 flex-space_evenly height-80">
             <h1 class="text_title">Balance Your Body and Mind</h1>
             <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
@@ -63,7 +64,7 @@
             <h1 class="text_title ">Pregnant Women Program</h1>
             <p class="text ">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
             <div>
-              <button class="button">JOIN US NOW</button>
+              <button class="button text">JOIN US NOW</button>
             </div>
           </section>
           <section>
@@ -97,13 +98,16 @@
           </section>
           <section class="width-40">
             <img src="Componentes/Articulo 4/image.png" alt="image" class="image1">
-            <img src="Componentes/Articulo 4/img3.png" alt="image" class="img8 absolute">
+            <div class="img7-edit relative"><img src="Componentes/Articulo 4/img1.png" alt="image" class="absolute img7"></div>
+            <div class="img6-edit relative"><img src="Componentes/Articulo 4/img3.png" alt="image" class="img6 absolute"></div>
           </section>
         </article>
         <article class="gray_bg flex flex-space_evenly flex-aling_center article gap " id="training">
           <section> 
             <img src="Componentes/Articulo 5/image.png" alt="image" class="image3">
-            <img src="Componentes/Articulo 5/flotante.png" alt="" class="img9 absolute">
+            <div class="relative img7-edit">
+              <img src="Componentes/Articulo 5/flotante.png" alt="" class="img7 absolute">
+            </div>
           </section>
           <section class="flex flex-column width-40 flex-space_evenly height-80">
             <h1 class="text_title">Join Now and Get 50% Off</h1>
@@ -118,29 +122,113 @@
             <h3 class="text_title2">Galery</h3>
             <p class="text text_center">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
           </section>
-          <section>
-            <img src="Componentes/Articulo 6/img1.png" alt="img" class="absolute img10">
-          </section>
-          <section class=" grid">
-            <div class="flex flex-column card ">
+          <div class="img13-edit relative"><img src="Componentes/Articulo 6/img4.png" alt="img" class="img13 absolute"></div>
+          <section class="flex flex-space_bentweed width-90 z-index">
+            <div class="img9-edit relative"><img src="Componentes/Articulo 6/img1.png" alt="img" class="absolute img9 "></div>
+            <div class="img12-edit relative"><img src="Componentes/Articulo 6/img5.png" alt="img" class="absolute img12 z-index--1"></div>
+            <div class="flex flex-column card white_bg">
               <img src="Componentes/Articulo 6/img-1.png" alt="image">
               <h3 class="text_h3 padding_top text_center">Facilis Gravida</h3>
               <p class="text2 text_center padding text_center">A lacus vestibulum sed. Amet purus gravida quis blandit turpis.</p>
             </div>
-            <div class="flex flex-column card ">
+            <div class="flex flex-column card white_bg">
               <img src="Componentes/Articulo 6/img-2.png" alt="image">
               <h3 class="text_h3 padding_top text_center">Facilis Gravida</h3>
               <p class="text2 text_center padding text_center">A lacus vestibulum sed. Amet purus gravida quis blandit turpis.</p>
             </div>
-            <div class="flex flex-column card ">
+            <div class="flex flex-column card white_bg">
               <img src="Componentes/Articulo 6/img-3.png" alt="image" >
               <h3 class="text_h3 padding_top text_center">Facilis Gravida</h3>
-              <p class="text2 text_center padding text_center">A lacus vestibulum sed. Amet purus gravida quis blandit turpis.</p>
+              <p class="text2 text_center padding text_center z-index">A lacus vestibulum sed. Amet purus gravida quis blandit turpis.</p>
             </div>
+            <div class="img10-edit relative"><img src="Componentes/Articulo 6/img2.png" alt="img" class="z-index--1 absolute img10"></div>
+            <div class="img11-edit relative"><img src="Componentes/Articulo 6/img3.png" alt="img" class="z-index--1 absolute img11"></div>
           </section>
           
         </article>
+        <article class="article rosa_bg flex flex-space_evenly flex-aling_center" id="shop">
+          <section>
+            <img src="Componentes/Articulo 7/image.png" alt="image" class="image4">
+          </section>
+          <section class="flex flex-column width-40">
+            <h1 class="text_title">Yoga Training Video Showreel</h1>
+            <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+            <div class="width-30 flex flex-space_bentweed padding_top-5">
+              <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#9ba1ab" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg></div>
+              <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#9ba1ab" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"/></svg></div>
+              <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#9ba1ab" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"/></svg></div>
+            </div>
+          </section>
+        </article>
+        <article class="flex flex-center padding " id="contact">
+          <section class="article flex flex-column width-70 flex-aling_center flex-center">
+            <h2 class="text_title2">Get in Touch</h2>
+            <p class="text text_center">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
+            <form action="#" class="width gap flex flex-column padding_top-10 z-index">
+              <input type="text" class="input1 text height-10" placeholder="Your Name">
+              <input type="text" class="input1 text height-10" placeholder="Gender">
+              <textarea  class="height-30 input1 text" name="text" rows="4" placeholder="Message..."></textarea><br>  
+            </form>
+            <button class="button text">SEND MESSAGE</button>
+          </section>
+          <section>
+            <div class="relative img14-edit"><img src="Componentes/Articulo 8/img1.png" alt="" class="img14 absolute"></div>
+            <div class="relative img15-edit"><img src="Componentes/Articulo 8/img2.png" alt="" class="img15 absolute"></div>
+            <div class="relative img16-edit"><img src="Componentes/Articulo 8/img3.png" alt="" class="img16 absolute"></div>
+            <div class="relative img17-edit"><img src="Componentes/Articulo 8/img4.png" alt="" class="img17 absolute"></div>
+          </section>
+        </article>
       </main>
+      <footer class="flex flex-center article-50 blue_bg">
+        <article class="flex width-90 flex-space_evenly">
+          <section class="flex flex-space_bentweed flex-column margin-20">
+            <h3 class="text-white"> Your Company</h3>
+            <div class="flex flex-column">
+              <p class="text2-white">Halimun Stret 25</p>
+              <p class="text2-white">Jakarta, Indonesia</p>
+              <p class="text2-white">12850</p>
+            </div>
+            <p class="text2-white"> www.yourdomain.com</p>
+          </section>
+          <section class="flex flex-column flex-space_evenly margin-20">
+            <h3 class="text-white">Sitemap</h3>
+            <p class="text2-white">Home</p>
+            <p class="text2-white">About</p>
+            <p class="text2-white">Blog</p>
+            <p class="text2-white">Menu</p>
+            <p class="text2-white">Store</p>
+            <p class="text2-white">Contact</p>
+          </section>
+          <section class="flex flex-column flex-space_evenly margin-20">
+            <h3 class="text-white">Lorem Inpsum</h3>
+            <p class="text2-white">Neque</p>
+            <p class="text2-white">Supendisse</p>
+            <p class="text2-white">Dictum</p>
+            <p class="text2-white">Porttitor</p>
+            <p class="text2-white">Tincidunt</p>
+            <p class="text2-white">Enim lobortis</p>
+          </section>
+          <section class="flex flex-column flex-space_evenly margin-20">
+            <h3 class="text-white">Sit Amet</h3>
+            <p class="text2-white">Neque</p>
+            <p class="text2-white">Supendisse</p>
+            <p class="text2-white">Dictum</p>
+            <p class="text2-white">Porttitor</p>
+            <p class="text2-white">Tincidunt</p>
+            <p class="text2-white">Enim lobortis</p>
+          </section>
+          <section class="flex flex-column flex-center margin-20">
+            <img src="Componentes/footer/logo.png" alt="image" class="image padding">
+            <p class="text2-white">Copyright ©  2020 Freepik</p>
+            <p class="text2-white">Company S.L. All rights reserved.</p>
+            <div class="width-30 flex flex-space_bentweed margin-20">
+              <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon2"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#9ba1ab" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg></div>
+              <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon2"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#9ba1ab" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"/></svg></div>
+              <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon2"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#9ba1ab" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"/></svg></div>
+            </div>
+          </section>
+        </article>
+      </footer>
       <script src="script.js"></script>
 </body>
 </html>
