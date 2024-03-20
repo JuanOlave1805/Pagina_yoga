@@ -95,14 +95,8 @@
 .image1{
     width: 40vw;
 }
-.image2{
-    width: clamp(50px, 40vw, 550px);
-}
 .image3{
-    width: clamp(50px, 50vw, 800px);
-}
-.image4{
-    width: clamp(50px, 50vw, 800px);
+    width: 50vw
 }
 
 .image_fondo1{
@@ -436,6 +430,7 @@
     }
     .flex-repon_center{
         justify-content: center;
+        display: flex;
     }
     .flex-wrap{
         flex-wrap: wrap;
@@ -450,6 +445,10 @@
     .img2{
         top: 35vh;
         left: 30vw;
+    }
+    .img8{
+        top: 2vh;
+        left: 35vw;
     }
     .width-40{
         width: 90%;
